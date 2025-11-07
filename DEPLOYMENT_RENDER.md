@@ -145,12 +145,4 @@ npm run build
 npm run preview
 ```
 
----
 
-## 8) Next steps / optional improvements
-
-- Add a `Procfile` or `start:prod` script (this repo includes `start:prod`) so platform-specific workflows are explicit.
-- If `shared/` is used across services, consider using a monorepo manager (pnpm workspaces, Yarn workspaces) to streamline installs and resolution during CI/CD.
-- Add a small `README` in `server/` and `client/` with exact build/start instructions used by Render.
-
----
