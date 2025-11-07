@@ -70,3 +70,7 @@ pids/
 *.pid
 *.seed
 *.pid.lock
+
+
+DEPLOY_HOSTINGER.md
+DEPLOY_VERCEL.md
