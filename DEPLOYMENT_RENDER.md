@@ -45,7 +45,7 @@ Render service settings:
 - Root Directory: `server`
 - Build Command: `npm install && npm run build`
 - Start Command: `npm run start` (or `npm run start:prod` — both run `node dist/index.js` in this repo)
-- Set environment-specific config and secrets (see 4) Environment variables)
+- Set environment-specific config and secrets ( 4. Environment variables)
 - Health Check Path: `/health`
 - Auto deploy: enabled (optional)
 
