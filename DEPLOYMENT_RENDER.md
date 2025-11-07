@@ -154,10 +154,3 @@ npm run preview
 - Add a small `README` in `server/` and `client/` with exact build/start instructions used by Render.
 
 ---
-
-If you want, I can also:
-- Commit this `DEPLOYMENT.md` to the repo (done).
-- Add a Render `service.yaml` (Render infrastructure as code) for reproducible deployments.
-- Convert the repo to a workspace-managed monorepo to avoid `file:` package problems.
-
-Tell me which of those to do next.
