@@ -1,10 +1,11 @@
 {
   "name": "@todo-app/shared",
   "version": "1.0.0",
-  "main": "index.ts",
-  "types": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "typescript": "^5.9.3"

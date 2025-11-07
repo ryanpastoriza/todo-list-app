@@ -22,7 +22,13 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok', message: 'Todo API is running' });
 });
 
+// Root: redirect to health for a friendly default and avoid "Cannot GET /"
 app.get('/', (req, res) => {
+  res.redirect('/health');
+});
+
+// Preserve info route that returns a small API description and shared greeting
+app.get('/info', (req, res) => {
   res.json({ name: 'Todo List API', version: '1.0.0', message: getGreeting() });
 });
 
