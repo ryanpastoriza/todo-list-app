@@ -25,14 +25,20 @@ export default function TodoApp() {
   const loadTodos = async () => {
     setLoading(true);
     try {
-      // Simulated data - replace with: 
-      const response = await fetch(`${API_URL}/todos`);
-      const data = await response.json();
+
+      // Example Data
       // const simulatedData: Todo[] = [
       //   { id: 1, title: 'Build the backend API', completed: false, created_at: new Date().toISOString() },
       //   { id: 2, title: 'Connect to PostgreSQL', completed: false, created_at: new Date().toISOString() },
       //   { id: 3, title: 'Style with Tailwind', completed: true, created_at: new Date().toISOString() }
       // ];
+
+      // setTodos(simulatedData);
+
+      // Simulated data - replace with: 
+      const response = await fetch(`${API_URL}/todos`);
+      const data = await response.json();
+      
       setTodos(data);
     } catch (error) {
       console.error('Failed to load todos:', error);
@@ -59,6 +65,7 @@ export default function TodoApp() {
       //   completed: false,
       //   created_at: new Date().toISOString()
       // };
+
       setTodos([todo, ...todos]);
       setNewTodo('');
     } catch (error) {
