@@ -72,7 +72,7 @@ pids/
 *.pid.lock
 
 
-# .github/workflows/ci-cd.yml
+.github/workflows/ci-cd.yml
 .github/workflows/client.yml
 .github/workflows/server.yml
 .github/workflows/shared.yml
