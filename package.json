@@ -5,8 +5,5 @@
     "server",
     "shared",
     "client"
-  ],
-  "scripts": {
-    "build": "npm run build -w shared"
-  }
+  ]
 }
