@@ -73,6 +73,9 @@ pids/
 
 
 .github/workflows/ci-cd.yml
+.github/workflows/client.yml
+.github/workflows/server.yml
+.github/workflows/shared.yml
 
 DEPLOY_HOSTINGER.md
 DEPLOY_VERCEL.md
