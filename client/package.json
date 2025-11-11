@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "preinstall": "cd ../shared && npm install --no-audit --no-fund && npm run build",
     "build": "tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -14,7 +13,7 @@
     "lucide-react": "^0.292.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@todo-app/shared": "file:../shared"
+    "@todo-app/shared": "1.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.8.9",
