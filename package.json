@@ -7,12 +7,13 @@
     "client"
   ],
   "scripts": {
-    "build": "npm run build:shared && npm run build:server",
-    "build:shared": "npm run build --workspace shared",
-    "build:server": "npm run build --workspace server",
-    "start:server": "npm start --workspace server",
-    "dev:server": "npm run dev --workspace server",
-    "build:client": "npm run build --workspace client",
-    "start:client": "npm start --workspace client"
+    "build": "npm run build:shared && npm run build:server && npm run build:client",
+    "build:shared": "npm --workspace @todo-app/shared run build",
+    "build:server": "npm --workspace server run build",
+    "build:client": "npm --workspace client run build",
+    "dev:server": "npm --workspace server run dev",
+    "dev:client": "npm --workspace client run dev",
+    "start:server": "npm --workspace server start",
+    "start:client": "npm --workspace client start"
   }
 }
