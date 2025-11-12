@@ -7,6 +7,7 @@
     "client"
   ],
   "scripts": {
+    "install:deps":	"npm install",
     "build": "npm run build:shared && npm run build:server && npm run build:client",
     "build:shared": "npm --workspace shared run build",
     "build:server": "npm --workspace server run build",
