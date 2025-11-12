@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "npm run build:shared && npm run build:server && npm run build:client",
-    "build:shared": "npm --workspace @todo-app/shared run build",
+    "build:shared": "npm --workspace shared run build",
     "build:server": "npm --workspace server run build",
     "build:client": "npm --workspace client run build",
     "dev:server": "npm --workspace server run dev",
