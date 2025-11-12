@@ -3,7 +3,8 @@
     "declaration": true,
     "emitDeclarationOnly": false,
     "outDir": "dist",
-    "module": "commonjs",
+    "rootDir": "src",
+    "module": "ESNext",
     "target": "ES2020",
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -11,8 +12,9 @@
     "strict": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "types": []
+    "composite": true,
+    "types": ["node"]
   },
-  "include": ["**/*.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src/**/*"], // Changed to a relative path
+  "exclude": ["node_modules", "dist"] // Added the explicit exclude path from the error messag
 }
