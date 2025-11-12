@@ -5,16 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "preinstall": "cd ../shared && npm install --no-audit --no-fund && npm run build",
     "build": "tsc && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "serve -s dist -l $PORT"
   },
   "dependencies": {
     "lucide-react": "^0.292.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@todo-app/shared": "file:../shared"
+    "@todo-app/shared": "*"
   },
   "devDependencies": {
     "@types/node": "^20.8.9",
@@ -30,8 +30,9 @@
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
     "tailwindcss": "^3.3.5",
-    "typescript": "^5.2.2",
-    "vite": "^4.5.0"
+    "typescript": "^5.9.3",
+    "vite": "^4.5.0",
+    "serve": "^14.2.1"
   }
 }
 

@@ -2,8 +2,19 @@
   "private": true,
   "name": "todo-list-app",
   "workspaces": [
-    "server",
     "shared",
+    "server",
     "client"
-  ]
+  ],
+  "scripts": {
+    "install:deps":	"npm install",
+    "build": "npm run build:shared && npm run build:server && npm run build:client",
+    "build:shared": "npm --workspace shared run build",
+    "build:server": "npm --workspace server run build",
+    "build:client": "npm --workspace client run build",
+    "dev:server": "npm --workspace server run dev",
+    "dev:client": "npm --workspace client run dev",
+    "start:server": "npm --workspace server start",
+    "start:client": "npm --workspace client start"
+  }
 }
